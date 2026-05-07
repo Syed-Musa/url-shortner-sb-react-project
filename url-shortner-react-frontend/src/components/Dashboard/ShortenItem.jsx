@@ -114,7 +114,7 @@ const ShortenItem = ({ originalUrl, shortUrl, clickCount, createdDate }) => {
                 onCopy={() => setIsCopied(true)}
                 text={`${import.meta.env.VITE_REACT_FRONT_END_URL + "/" + `${shortUrl}`}`}
             >
-                <div className="flex cursor-pointer gap-1 items-center bg-btnColor py-2  font-semibold shadow-md shadow-slate-500 px-6 rounded-md text-white ">
+                <div className="flex cursor-pointer gap-1 items-center bg-btnColor py-2  font-semibold shadow-md shadow-slate-500 px-6 rounded-md text-black ">
                 <button className="">{isCopied ? "Copied" : "Copy"}</button>
                 {isCopied ? (
                     <LiaCheckSolid className="text-md" />
